@@ -1,0 +1,95 @@
+Roadmap do Marco
+
+--------Baby Marco:
+/ping ✔️
+/falar ✔️
+/playlist ✔️
+/help ✔️
+
+--------Kid Marco:
+/git ✔️
+/docs (documentação de linguagens diversas com uma mini explicação da utilidade delas)
+/front (talvez? com as linguagens frontend tendo css e javascript com opção das bibliotecas)
+/back, /banco, /bibliotecas, /frameworks etc etc
+
+--------Teen Marco:
+/segredo (marco conta um segredo, podendo ser verdade ou não)
+/piada (marco conta uma piada sobre programação)
+/buguei (marco buga)
+/previsão (marco gera uma previsão do fim do horario de verao)
+/desculpa (gera uma desculpa idiota para não ter feito algo)
+/curiosidade (marco conta alguma curiosidade aleatória, podendo ser verdade ou não)
+/wwe (fatos sobre wwe, podendo ser verdade ou nao)
+
+--------Young Marco:
+/virgem (detector de virgem, vai dar a porcentagem de aura virgem e depois o veredito)
+/mentira (detector de mentira, vai dar a porcentagem do quão mentira parece e depois o veredito)
+/amor (o quanto o marco te ama, porcentagem)
+
+--------Adult Marco:
+fazer memes com base em templates e marcações (/meme)
+pesquisa no google e wikipedia (/pesquisa)
+traduzir algo do inglês (/traduzir)
+
+--------Old Marco:
+marco ajudar no código
+
+
+
+
+
+🧠 Utilitários e Aprendizado
+/explica [termo]
+Explica um conceito de programação (ex: “O que é uma Promise?”, “O que é Big O?”).
+
+/snippet [linguagem] [funcionalidade]
+Gera um trecho de código de exemplo (ex: JavaScript fetch API, Python bubble sort).
+
+/erro [mensagem]
+Tenta identificar o erro de uma linguagem comum e sugerir uma solução (tipo um mini StackOverflow).
+
+/duvida
+Usuário manda uma dúvida e o bot tenta responder ou posta num canal específico para a galera ajudar.
+
+/atalhos-vscode
+Mostra atalhos úteis do VSCode por sistema operacional.
+
+🧪 Brincadeiras com Programação
+/code-meme
+Manda um meme de programação aleatório.
+
+/simula [linguagem]
+Simula como seria resolver um problema simples em diferentes linguagens. ("Como um programador C faria isso? E um em Python?").
+
+/hello-world [linguagem]
+Manda o clássico “Hello World” na linguagem escolhida.
+
+/linguagem-aleatoria
+Escolhe uma linguagem aleatória obscura e mostra um fato sobre ela.
+
+💻 Produtividade
+/pomodoro
+Inicia um temporizador Pomodoro com lembretes e contagem de ciclos.
+
+/todo
+Cria uma lista de tarefas básicas para programadores (com suporte a marcar como feito).
+
+/deploy
+Mensagem estilizada tipo: “🚀 Deploy enviado! Espero que você tenha testado...”.
+
+🤖 Interativos / Inteligência Artificial
+/debug
+O bot lê um trecho de código e tenta detectar possíveis problemas.
+
+/chat-gpt-code [pergunta]
+Uma integração que simula você perguntando algo pra uma IA sobre código.
+
+/review-code
+Você manda um código e ele “faz um code review”, talvez até com notas estilo professor.
+
+🎲 Comandos aleatórios e engraçados
+/linguagem-do-dia
+O bot escolhe uma linguagem para você usar hoje (“Hoje é dia de você programar em Rust! Boa sorte...”)
+
+/seja-programador
+Manda uma mensagem motivacional (ou sarcástica) como: “Você não entende recursão? Tudo bem, o compilador também não.”
