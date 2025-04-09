@@ -1,11 +1,18 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const messageHandler = require('./events/messageHandler');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const dotenv = require('dotenv');
 dotenv.config();
 const { TOKEN, CLIENT_ID, GUILD_ID } = process.env;
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({ 
+    intents: [
+        GatewayIntentBits.Guilds, 
+        GatewayIntentBits.GuildMessages, 
+        GatewayIntentBits.MessageContent
+    ] 
+});
 
 client.commands = new Collection();
 const foldersPath = path.join(__dirname, 'commands');
@@ -37,5 +44,9 @@ for (const file of eventFiles) {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
 }
+
+client.on('messageCreate', (message) => {
+    messageHandler(message);
+});
 
 client.login(TOKEN);

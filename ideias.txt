@@ -2,7 +2,7 @@ Roadmap do Marco
 
 --------Baby Marco:
 /ping ✔️
-/falar
+/falar ✔️
 /playlist ✔️
 /help ✔️
 
