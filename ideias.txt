@@ -2,12 +2,12 @@ Roadmap do Marco
 
 --------Baby Marco:
 /ping ✔️
-/falar ✔️
+/falar
 /playlist ✔️
 /help ✔️
 
 --------Kid Marco:
-/git ✔️
+/git
 /docs (documentação de linguagens diversas com uma mini explicação da utilidade delas)
 /front (talvez? com as linguagens frontend tendo css e javascript com opção das bibliotecas)
 /back, /banco, /bibliotecas, /frameworks etc etc
