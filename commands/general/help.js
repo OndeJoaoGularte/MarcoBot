@@ -10,17 +10,22 @@ const help = new EmbedBuilder()
 		{ name: 'Comandos Gerais:', value: 'Comandos gerais para conhecer e virar amigo do marCo! 😁💘' },
 		{ name: '/ping', value: 'Apresentação do marCo!', inline: true },
 		{ name: '/playlist', value: 'Conheça a Playlist do marCo!', inline: true },
+        { name: '', value: '' },
         { name: '/segredo', value: 'Peça para o marCo te contar um segredo 🤫', inline: true },
         { name: '/falar', value: 'Peça ao marCo para falar algo 🗣️', inline: true },
 	)
     .addFields(
         { name: '\u200B', value: '\u200B', inline: false },
-		{ name: 'Programação:', value: 'Programe com a ajuda do marCo o gênio da programação 😎💻' },
-		{ name: '/git', value: 'Lista de todos os comandos do Git', inline: true },
+		{ name: 'Programação:', value: 'Programe com a ajuda do marCo, o gênio da programação 😎💻' },
+        { name: '/docs', value: 'Consulte a documentação das principais linguagens de desenvolvimento', inline: true },
+		{ name: '/git', value: 'Consulte a lista com todos os comandos do Git', inline: true },
+        { name: '', value: '' },
         { name: '/db', value: 'Links das principais tecnologias para a criação de bancos', inline: true },
         { name: '/front', value: 'Links das principais tecnologias para o FrontEnd', inline: true },
+        { name: '', value: '' },
         { name: '/back', value: 'Links das principais tecnologias para o BackEnd', inline: true },
         { name: '/librarys', value: 'Saiba as principais bibliotecas para desenvolvimento web', inline: true },
+        { name: '', value: '' },
         { name: '/frameworks', value: 'Saiba os principais frameworks para desenvolvimento web', inline: true },
 	)
     .addFields(
@@ -33,7 +38,7 @@ const help = new EmbedBuilder()
 	)
 	.addFields(
         { name: '\u200B', value: '\u200B', inline: false },
-        { name: 'MarCo Polo ≠ marCo Bot', value: 'Apesar do que a maioria pode pensar, eles não são a mesma pessoa. 😅', inline: true }
+        { name: 'Marco Polo ≠ marCo Bot', value: 'Apesar do que a maioria pode pensar, eles não são a mesma pessoa. 😅', inline: true }
     )
 	.setImage('https://media.discordapp.net/attachments/719744273989500951/1351379668082626612/marco.png?ex=67da29e4&is=67d8d864&hm=2e872f3c64807782d91e9877569b84cebb52d806180b1da57edb0fba70bbfaeb&=&format=webp&quality=lossless&width=1240&height=930')
 	.setTimestamp()

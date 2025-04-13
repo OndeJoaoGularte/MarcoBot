@@ -7,7 +7,7 @@ Roadmap do Marco
 /help ✔️
 
 --------Kid Marco:
-/git
+/git ✔️
 /docs (documentação de linguagens diversas com uma mini explicação da utilidade delas)
 /front (talvez? com as linguagens frontend tendo css e javascript com opção das bibliotecas)
 /back, /banco, /bibliotecas, /frameworks etc etc
@@ -16,12 +16,12 @@ Roadmap do Marco
 /segredo (marco conta um segredo, podendo ser verdade ou não)
 /piada (marco conta uma piada sobre programação)
 /buguei (marco buga)
-/previsão (marco gera uma previsão do fim do horario de verao)
-/desculpa (gera uma desculpa idiota para não ter feito algo)
 /curiosidade (marco conta alguma curiosidade aleatória, podendo ser verdade ou não)
 /wwe (fatos sobre wwe, podendo ser verdade ou nao)
 
 --------Young Marco:
+/previsão (marco gera uma previsão do fim do horario de verao)
+/desculpa (gera uma desculpa idiota para não ter feito algo)
 /virgem (detector de virgem, vai dar a porcentagem de aura virgem e depois o veredito)
 /mentira (detector de mentira, vai dar a porcentagem do quão mentira parece e depois o veredito)
 /amor (o quanto o marco te ama, porcentagem)
