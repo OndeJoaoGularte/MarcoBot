@@ -24,7 +24,7 @@ const help = new EmbedBuilder()
         { name: '/front', value: 'Links das principais tecnologias para o FrontEnd', inline: true },
         { name: '', value: '' },
         { name: '/back', value: 'Links das principais tecnologias para o BackEnd', inline: true },
-        { name: '/librarys', value: 'Saiba as principais bibliotecas para desenvolvimento web', inline: true },
+        { name: '/bibliotecas', value: 'Saiba as principais bibliotecas para desenvolvimento web', inline: true },
         { name: '', value: '' },
         { name: '/frameworks', value: 'Saiba os principais frameworks para desenvolvimento web', inline: true },
 	)

@@ -8,9 +8,12 @@ Roadmap do Marco
 
 --------Kid Marco:
 /git ✔️
-/docs (documentação de linguagens diversas com uma mini explicação da utilidade delas)
-/front (talvez? com as linguagens frontend tendo css e javascript com opção das bibliotecas)
-/back, /banco, /bibliotecas, /frameworks etc etc
+/docs ✔️
+/frameworks ✔️
+/bibliotecas ✔️
+/front 
+/back 
+ /banco, /orm etc etc
 
 --------Teen Marco:
 /segredo (marco conta um segredo, podendo ser verdade ou não)

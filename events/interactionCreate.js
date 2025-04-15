@@ -3,11 +3,23 @@ const { Events, MessageFlags } = require('discord.js');
 module.exports = {
 	name: Events.InteractionCreate,
 	async execute(interaction) {
-		if (interaction.isStringSelectMenu() && interaction.customId === "select-docs") {
-			const docsCommand = interaction.client.commands.get("docs");
-			if (docsCommand && typeof docsCommand.handleSelect === "function") {
+		const customIdToCommand = {
+			"select-docs": "docs",
+			"select-languagefw": "frameworks",
+			"select-framework": "frameworks",
+			"select-languagelib": "bibliotecas",
+			"select-library": "bibliotecas"
+		};
+
+		if (interaction.isStringSelectMenu()) {
+			const commandName = customIdToCommand[interaction.customId];
+			if (!commandName) return;
+
+			const command = interaction.client.commands.get(commandName);
+
+			if (command && typeof command.handleSelect === "function") {
 				try {
-					await docsCommand.handleSelect(interaction);
+					await command.handleSelect(interaction);
 				} catch (error) {
 					console.error(error);
 					await interaction.reply({
@@ -19,7 +31,7 @@ module.exports = {
 			return;
 		}
 
-		// Lida com comandos de barra normais
+		// Trata comandos de barra normais
 		if (!interaction.isChatInputCommand()) return;
 
 		const command = interaction.client.commands.get(interaction.commandName);
