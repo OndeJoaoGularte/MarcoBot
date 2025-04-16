@@ -3,7 +3,7 @@ const { SlashCommandBuilder, ActionRowBuilder, StringSelectMenuBuilder, EmbedBui
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("frameworks")
-        .setDescription("Consulte a documentação dos principais frameworks de C# e Ruby"),
+        .setDescription("Consulte a documentação dos principais frameworks de desenvolvimento"),
 
     async execute(interaction) {
         const row = new ActionRowBuilder().addComponents(
@@ -45,7 +45,8 @@ module.exports = {
                 frameworkOptions = [
                     { label: "React", value: "react", description: "Documentação do React" },
                     { label: "Vue.js", value: "vue", description: "Documentação do Vue.js" },
-                    { label: "Angular", value: "angular", description: "Documentação do Angular" }
+                    { label: "Angular", value: "angular", description: "Documentação do Angular" },
+                    { label: "Express", value: "express", description: "Documentação do Express.js" }
                 ];
             } else if (selected === "typescript") {
                 frameworkOptions = [
@@ -126,6 +127,11 @@ module.exports = {
                     url: "https://angular.io/docs",
                     description: "Documentação oficial do Angular."
                 },
+                express: {
+                    title: "Express.js",
+                    url: "https://expressjs.com/",
+                    description: "Documentação oficial do Express.js, um framework minimalista para Node.js."
+                },                
                 nextjs: {
                     title: "Next.js",
                     url: "https://nextjs.org/docs",
