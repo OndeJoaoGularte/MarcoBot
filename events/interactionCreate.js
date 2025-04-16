@@ -8,7 +8,8 @@ module.exports = {
 			"select-languagefw": "frameworks",
 			"select-framework": "frameworks",
 			"select-languagelib": "bibliotecas",
-			"select-library": "bibliotecas"
+			"select-library": "bibliotecas",
+			"select-front": "front"
 		};
 
 		if (interaction.isStringSelectMenu()) {

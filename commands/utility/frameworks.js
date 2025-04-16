@@ -3,7 +3,7 @@ const { SlashCommandBuilder, ActionRowBuilder, StringSelectMenuBuilder, EmbedBui
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("frameworks")
-        .setDescription("Consulte a documentação dos principais frameworks de desenvolvimento"),
+        .setDescription("Consulte a documentação dos principais frameworks de C# e Ruby"),
 
     async execute(interaction) {
         const row = new ActionRowBuilder().addComponents(
@@ -16,7 +16,9 @@ module.exports = {
                     { label: "TypeScript", description: "Veja os frameworks de TypeScript", value: "typescript" },
                     { label: "Python", description: "Veja os frameworks de Python", value: "python" },
                     { label: "Java", description: "Veja os frameworks de Java", value: "java" },
-                    { label: "PHP", description: "Veja os frameworks de PHP", value: "php" }
+                    { label: "PHP", description: "Veja os frameworks de PHP", value: "php" },
+                    { label: "C#", description: "Veja os frameworks de C#", value: "csharp" },
+                    { label: "Ruby", description: "Veja os frameworks de Ruby", value: "ruby" }
                 )
         );
 
@@ -63,6 +65,17 @@ module.exports = {
                 frameworkOptions = [
                     { label: "Laravel", value: "laravel", description: "Documentação do Laravel" },
                     { label: "Symfony", value: "symfony", description: "Documentação do Symfony" }
+                ];
+            } else if (selected === "csharp") {
+                frameworkOptions = [
+                    { label: "ASP.NET Core", value: "aspnetcore", description: "Documentação do ASP.NET Core" },
+                    { label: "Blazor", value: "blazor", description: "Documentação do Blazor" },
+                    { label: "Entity Framework", value: "entityframework", description: "Documentação do Entity Framework" }
+                ];
+            } else if (selected === "ruby") {
+                frameworkOptions = [
+                    { label: "Ruby on Rails", value: "rails", description: "Documentação do Ruby on Rails" },
+                    { label: "Sinatra", value: "sinatra", description: "Documentação do Sinatra" }
                 ];
             }
 
@@ -147,6 +160,31 @@ module.exports = {
                     title: "Symfony",
                     url: "https://symfony.com/doc/current/index.html",
                     description: "Documentação oficial do Symfony, um framework web poderoso para PHP."
+                },
+                aspnetcore: {
+                    title: "ASP.NET Core",
+                    url: "https://learn.microsoft.com/aspnet/core/",
+                    description: "Documentação oficial do ASP.NET Core, um framework para construção de aplicações web com C#."
+                },
+                blazor: {
+                    title: "Blazor",
+                    url: "https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor",
+                    description: "Documentação do Blazor, para construir interfaces web interativas usando C#."
+                },
+                entityframework: {
+                    title: "Entity Framework",
+                    url: "https://learn.microsoft.com/ef/core/",
+                    description: "Documentação oficial do Entity Framework, ORM para C#."
+                },
+                rails: {
+                    title: "Ruby on Rails",
+                    url: "https://guides.rubyonrails.org/",
+                    description: "Documentação oficial do Ruby on Rails, um framework poderoso para aplicações web em Ruby."
+                },
+                sinatra: {
+                    title: "Sinatra",
+                    url: "http://sinatrarb.com/documentation.html",
+                    description: "Documentação oficial do Sinatra, um microframework para Ruby."
                 }
             };
 
